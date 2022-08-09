@@ -1,0 +1,70 @@
+/* 头部 */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0% 1%;
+    .logo{
+     img{
+        width: 80%;
+        padding: 0%;
+        
+     }   
+    }
+    .menu{
+        font-size: 2.5em;
+        color: #b20000;
+        padding: 6% 3% 3% 3%;
+    }
+
+    .menu{
+        background: url(../images/header-border.png) no-repeat left center;
+    }
+}
+
+// 底部
+.footer{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #353535;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .item{
+        width: 25%;
+        padding: 3% 0%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        transition: all ease-in-out .3s;
+
+        &:hover{
+            background: #1c91dd;
+
+            span{
+                color: #f5f5f5;
+            }
+        }
+        span{
+            width: 100%;
+            text-align: center;
+            font-size: 1,3em;
+            color: #666666;
+
+            &:first-child{
+                margin-bottom: 5px;
+                font-size: 1.7em;
+            }
+
+            &:last-child{
+                word-spacing: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        }
+    }
+}
